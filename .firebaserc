@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "message-invader",
+    "default": "message-invader"
+  }
+}

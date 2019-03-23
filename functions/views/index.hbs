@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131553222-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131553222-2');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@sartr">
+  <meta property="og:title" content="Message Invader" />
+  <meta property="og:description" content="インベーダーにのせてメッセージを送ろう" />
+  <meta property="og:image" content="https://message-invader.firebaseapp.com/imgs/index-card.png" />
+  <link rel="apple-touch-icon-precomposed" href="https://message-invader.firebaseapp.com/imgs/invader-icon.png" />
+
+  <title>Message Invaders</title>
+  <link rel="icon" type="image/png" href="/imgs/invader-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <a id="title" href="/">Message Invaders</a>
+    <p id="initial_message">オクリタイ メッセージ ヲ ニュウリョク シテ クダサイ。</p>
+    <div id="message-invader"></div>
+    <form id="input-form">
+      <textarea id="input" name="message" rows="2" wrap="soft" maxlength="36"></textarea>
+      <input id="submit" type="button" value="オクル">
+    </form>
+    <div id="buttons">
+      <a class="white_button" id="line" name="LINE" target="_blank">LINE デ オクル</a>
+      <a class="white_button" id="twitter" name="Twitter" target="_blank">Twitter デ オクル</a>
+      <a class="white_button" name="preview" target="_blank">アソンデミル</a>
+      <a class="white_button" name="home">モウイッコツクル</a>
+    </div>
+  </div>
+  <script src="js/p5.min.js"></script>
+  <script src="js/Sprite.js"></script>
+  <script src="js/indexSketch.js"></script>
+  <script src="js/indexScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131553222-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131553222-2');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@sartr">
+  <meta property="og:title" content="Message Invader" />
+  <meta property="og:description" content="メッセージが届いています" />
+  <meta property="og:image" content="https://message-invader.firebaseapp.com/imgs/game-card.png" />
+  <link rel="apple-touch-icon-precomposed" href="https://message-invader.firebaseapp.com/imgs/invader-icon.png" />
+
+  <title>Message Invaders</title>
+  <link rel="icon" type="image/png" href="/imgs/invader-icon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/p5.min.js"></script>
+</head>
+
+<body>
+  <a id="title" href="/" target="_blank">Message Invaders</a>
+  <div class="container">
+    <div id="buttons">
+      <a name="home" id="home" href="/">メッセージ ヲ オクル</a>
+    </div>
+  </div>
+  <script src="js/Sprite.js"></script>
+  <input type="hidden" name="message" value="{{ message }}" />
+  <script src="js/gameSketch.js"></script>
+  <div id="message-invader"></div>
+</body>
+
+</html>
