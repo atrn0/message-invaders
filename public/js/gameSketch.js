@@ -34,23 +34,23 @@ function preload() {
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight * 0.84);
   scale = Math.min(windowWidth, windowHeight) / 100;
-  charSize = scale * 14;
+  charSize = scale * 8;
   canvas.parent('message-invader');
   noSmooth();
   textFont("PixelMplus10-Regular");
 
   //create invaders
-  let invWidth = scale * invaderImg.width,
-    invHeight = scale * invaderImg.height;
+  let invWidth = scale * invaderImg.width * 0.6,
+    invHeight = scale * invaderImg.height * 0.6;
 
   let x = 0,
-    y = scale * 10,
+    y = scale * 5,
     yidx = 0;
   for (let i = 0; i < message.length; ++i) {
     invaders.push(new Invader(x, y, invWidth, invHeight, (yidx % 2 == 0) ? invaderImg : invader2Img, i));
-    x += scale * 5 + invWidth;
+    x += scale * 3 + invWidth;
     if (x >= width - invWidth * 1.5) {
-      y += scale * 5 + invHeight;
+      y += scale * 3 + invHeight;
       yidx++;
       x = 0;
     }

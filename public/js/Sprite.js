@@ -125,7 +125,7 @@ class Message extends Sprite {
 
   render() {
     textAlign(LEFT, CENTER);
-    textSize(14 * scale);
+    textSize(this.height());
     fill(this.color);
     text(this.char, this.left(), this.upper());
   }

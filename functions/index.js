@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   let message = req.body.message;
-  if (message && message.length <= 20) {
+  if (message && message.length <= 36) {
     let data = {
       message: message,
       created_at: new Date()
@@ -34,6 +34,7 @@ app.post('/', (req, res) => {
         console.error("Error adding document: ", error);
       });
   } else {
+    console.error("文字数制限");
     res.redirect('/');
   }
 })
