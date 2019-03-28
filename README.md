@@ -1,4 +1,4 @@
 # Message Invaders
 メッセージをインベーダーゲームにして送れるWebアプリです。
 
-[try](mi.ataran.me)
+[try](https://mi.ataran.me)
