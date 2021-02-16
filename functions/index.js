@@ -3,7 +3,8 @@ const functions = require('firebase-functions');
 const express = require('express');
 const engines = require('consolidate');
 
-admin.initializeApp(functions.config().firebase);
+admin.initializeApp()
+
 let db = admin.firestore();
 let messages = db.collection('messages');
 
@@ -11,6 +12,7 @@ const app = express();
 app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   res.render('index');
