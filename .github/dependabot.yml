@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/functions"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: firebase-admin
+    versions:
+    - 9.6.0
+  - dependency-name: vue
+    versions:
+    - 2.6.12
+  - dependency-name: handlebars
+    versions:
+    - 4.6.0
+  - dependency-name: firebase-functions
+    versions:
+    - 2.3.1
+  - dependency-name: express
+    versions:
+    - 4.17.1
+  - dependency-name: consolidate
+    versions:
+    - 0.16.0
+  - dependency-name: dot-prop
+    versions:
+    - 4.2.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: websocket-extensions
+    versions:
+    - 0.1.4
